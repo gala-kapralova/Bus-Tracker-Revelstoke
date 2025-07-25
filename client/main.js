@@ -8,7 +8,7 @@ const map = new ol.Map({
     })
   ],
   view: new ol.View({
-    center: ol.proj.fromLonLat([-119.4960, 49.8879]), // Kelowna
+    center: ol.proj.fromLonLat([-118.1970, 50.9981]), // Revelstoke
     zoom: 13
   })
 });
@@ -38,7 +38,7 @@ function getColorByRoute(route) {
 
 // Fetch real-time bus data from backend
 async function fetchBuses() {
-  const res = await fetch('https://bus-tracker-kelowna-production.up.railway.app/api/buses');
+  const res = await fetch('http://localhost:3000/api/buses');
   const data = await res.json();
 
   // Extract vehicle positions and route IDs

@@ -38,7 +38,7 @@ function getColorByRoute(route) {
 
 // Fetch real-time bus data from backend
 async function fetchBuses() {
-  const res = await fetch('http://localhost:3000/api/buses');
+  const res = await fetch('http://bus-tracker-revelstoke.up.railway.app/api/buses');
   const data = await res.json();
 
   // Extract vehicle positions and route IDs

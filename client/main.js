@@ -78,7 +78,7 @@ async function fetchBuses() {
         anchor: [0.5, 1],
         anchorXUnits: 'fraction',
         anchorYUnits: 'fraction',
-        scale: window.devicePixelRatio >= 2 ? 1.5 : 1
+        scale: window.devicePixelRatio >= 768 ? 0.8 : 1.2
       })
     });
 
